@@ -1,0 +1,286 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  padding-top: 72px;
+}
+
+.logo-merto {
+  letter-spacing: -2px;
+  position: relative;
+}
+.logo-bar {
+  position: relative;
+  display: inline-block;
+}
+.logo-bar::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -0.35em;
+  width: 1.1em;
+  height: 0.18em;
+  background: #e53935;
+  border-radius: 2px;
+}
+
+header {
+  box-shadow: 0 1px 0 #f0f0f0;
+}
+
+header .nav-link {
+  color: #222;
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 0 1.1rem;
+  transition: color 0.2s;
+}
+header .nav-link:hover, header .nav-link.active {
+  color: #e53935;
+  text-decoration: none;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: #e53935 !important;
+  background: none;
+}
+
+.input-group .form-control {
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: #f5f6f7;
+  border: none;
+  font-size: 1rem;
+}
+.input-group .btn-dark {
+  border-radius: 0.5rem;
+  background: #111;
+  border: none;
+  transition: background 0.2s;
+}
+.input-group .btn-dark:hover {
+  background: #e53935;
+}
+.input-group .btn-light {
+  background: #f5f6f7;
+  border: none;
+  font-weight: 500;
+}
+
+.badge.bg-danger {
+  background: #e53935 !important;
+}
+
+/* Product Section */
+.img-thumbnail {
+  border-radius: 0.7rem;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+  background: #fff;
+  padding: 0.2rem;
+}
+.img-thumbnail:hover, .img-thumbnail.border-dark {
+  border-color: #111;
+}
+
+main .fw-bold {
+  font-weight: 700 !important;
+}
+
+.btn-dark {
+  background: #111;
+  border: none;
+  transition: background 0.2s;
+}
+.btn-dark:hover {
+  background: #e53935;
+}
+.btn-danger {
+  background: #e53935;
+  border: none;
+  transition: background 0.2s;
+}
+.btn-danger:hover {
+  background: #b71c1c;
+}
+
+.list-unstyled .bi-check2 {
+  font-size: 1.1rem;
+  margin-right: 0.3em;
+}
+
+.badge.bg-success {
+  background: #e6f4ea !important;
+  color: #3bb77e !important;
+  font-weight: 500;
+}
+
+/* Banner */
+section .btn-success {
+  background: #217346;
+  border: none;
+  transition: background 0.2s;
+}
+section .btn-success:hover {
+  background: #14532d;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+  color: #222;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+  padding: 0.7rem 0;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-tabs .nav-link.active {
+  color: #222;
+  border-bottom: 2.5px solid #222;
+  background: none;
+}
+.nav-tabs .nav-link:hover {
+  color: #e53935;
+  border-bottom: 2.5px solid #e53935;
+}
+
+.tab-content {
+  border-radius: 0 0 1rem 1rem;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  background: #fff;
+}
+
+/* Related Products */
+.card {
+  border-radius: 1.1rem;
+  border: 1.5px solid #e5e5e5;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 24px 0 rgba(34,34,34,0.08);
+  border-color: #e53935;
+}
+.card-img-top {
+  border-radius: 1.1rem 1.1rem 0 0;
+  object-fit: cover;
+  height: 220px;
+  background: #f5f6f7;
+}
+.card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Footer */
+footer {
+  background: #181a1e !important;
+  color: #fff;
+  font-size: 1rem;
+}
+footer .logo-merto {
+  color: #fff;
+}
+footer .logo-bar::before {
+  background: #e53935;
+}
+footer .fw-bold {
+  font-weight: 700 !important;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: #e53935;
+  text-decoration: underline;
+}
+footer .form-control {
+  background: #23262a;
+  color: #fff;
+  border: none;
+}
+footer .form-control:focus {
+  background: #23262a;
+  color: #fff;
+  border: 1px solid #e53935;
+  box-shadow: none;
+}
+footer .btn-outline-light {
+  border: 1.5px solid #fff;
+  color: #fff;
+  background: none;
+  transition: background 0.2s, color 0.2s;
+}
+footer .btn-outline-light:hover {
+  background: #e53935;
+  color: #fff;
+  border-color: #e53935;
+}
+footer .bi {
+  font-size: 1.3rem;
+  margin-right: 0.7rem;
+  vertical-align: middle;
+}
+footer .d-flex.gap-3 .bi {
+  margin-right: 0;
+}
+
+/* Misc */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f5f6f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 4px;
+}
+
+.header-static {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background: #fff;
+  box-shadow: 0 1px 0 #f0f0f0, 0 2px 8px 0 rgba(34,34,34,0.04);
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  min-height: 64px;
+}
+.header-static img[alt="Merto Logo"] {
+  height: 40px;
+}
+/* Make navigation bar not fixed */
+.header-static + .container-fluid {
+  position: static !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 991.98px) {
+  .logo-merto {
+    font-size: 2rem !important;
+  }
+  .card-img-top {
+    height: 160px;
+  }
+}
+@media (max-width: 767.98px) {
+  .logo-merto {
+    font-size: 1.5rem !important;
+  }
+  .card-img-top {
+    height: 120px;
+  }
+  .container, .container-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
