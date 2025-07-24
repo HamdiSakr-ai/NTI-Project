@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merto Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-content">
+        <div class="top-bar-left">
+          <span class="top-bar-text">Contact us 24/7 (+92) 3942 7879</span>
+        </div>
+        <div class="top-bar-right">
+          <div class="language-selector">
+            <img src="img/english.png" alt="English" width="22">
+            <span>English</span>
+            <span class="arrow-down"></span>
+          </div>
+          <div class="currency-selector">
+            <span>USD</span>
+            <span class="arrow-down"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="header-logo">
+          <a href="#" class="logo">
+            <span class="merto-logo-text">
+              M<span class="merto-logo-e">e</span>rto
+              <span class="merto-logo-bar"></span>
+            </span>
+          </a>
+        </div>
+        <div class="header-contact">
+          <span class="header-contact-icon">
+            <i class="bi bi-telephone"></i>
+          </span>
+          <div class="header-contact-info">
+            <span class="header-contact-title">Contact us 24/7</span>
+            <span class="header-contact-phone">(+92) 3942 7879</span>
+          </div>
+        </div>
+        <div class="header-search">
+          <form class="search-form">
+            <div class="search-category">
+              <select name="category">
+                <option>All Categories</option>
+                <option>Autopart</option>
+                <option>Beauty & Health</option>
+                <option>Electronic</option>
+                <option>Fashion</option>
+                <option>Game Accessories</option>
+                <option>Home & Decor</option>
+                <option>Laptop & Computer</option>
+                <option>Phone & Tablet</option>
+                <option>TV, Audio - Video</option>
+              </select>
+            </div>
+            <input type="text" class="search-input" placeholder="Search for products...">
+            <button type="submit" class="search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="header-actions">
+          <a href="#" class="header-account">
+            <i class="bi bi-person"></i>
+            <span>Account</span>
+          </a>
+          <a href="#" class="header-wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="wishlist-count">0</span>
+          </a>
+          <a href="#" class="header-cart">
+            <i class="bi bi-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <div class="container">
+      <div class="nav-content">
+        <div class="nav-left">
+          <div class="shop-categories">
+            <span class="hamburger-icon">☰</span>
+            <span>SHOP BY CATEGORIES</span>
+          </div>
+        </div>
+        <div class="nav-center">
+          <ul class="nav-menu">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">Homepages <span class="arrow-down"></span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a href="#" class="nav-link">Categories <span class="arrow-down"></span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">Products <span class="arrow-down"></span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">Pages <span class="arrow-down"></span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">% Best Discount</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="#" class="nav-link">Recently viewed <span class="arrow-down"></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB AND TITLE -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb">
+          <span>Home</span>
+          <span class="separator">/</span>
+          <span>Shop</span>
+        </div>
+        <h1 class="page-title">Shop</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY BUTTONS -->
+  <section class="category-buttons">
+    <div class="container">
+      <div class="category-buttons-content">
+        <button class="category-btn">Autopart</button>
+        <button class="category-btn">Beauty & Health</button>
+        <button class="category-btn">Electronic</button>
+        <button class="category-btn">Fashion</button>
+        <button class="category-btn">Game Accessories</button>
+        <button class="category-btn">Home & Decor</button>
+        <button class="category-btn">Laptop & Computer</button>
+        <button class="category-btn">Phone & Tablet</button>
+        <button class="category-btn">TV, Audio - Video</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="container">
+      <div class="content-wrapper">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <!-- Colors Filter -->
+          <div class="filter-section">
+            <h3 class="filter-title">Colors</h3>
+            <div class="color-filters">
+              <div class="color-item">
+                <div class="color-swatch black"></div>
+                <span class="color-name">Black</span>
+                <span class="color-count">(95)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch blue"></div>
+                <span class="color-name">Blue</span>
+                <span class="color-count">(11)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch brown"></div>
+                <span class="color-name">Brown</span>
+                <span class="color-count">(26)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch burgundy"></div>
+                <span class="color-name">Burgundy</span>
+                <span class="color-count">(1)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch cool-pink"></div>
+                <span class="color-name">Cool Pink</span>
+                <span class="color-count">(1)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch deep-purple"></div>
+                <span class="color-name">Deep Purple</span>
+                <span class="color-count">(1)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch gray"></div>
+                <span class="color-name">Gray</span>
+                <span class="color-count">(25)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch green"></div>
+                <span class="color-name">Green</span>
+                <span class="color-count">(15)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch light-brown"></div>
+                <span class="color-name">Light Brown</span>
+                <span class="color-count">(4)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch navy"></div>
+                <span class="color-name">Navy</span>
+                <span class="color-count">(9)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch orange"></div>
+                <span class="color-name">Orange</span>
+                <span class="color-count">(4)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch pink"></div>
+                <span class="color-name">Pink</span>
+                <span class="color-count">(16)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch purple"></div>
+                <span class="color-name">Purple</span>
+                <span class="color-count">(3)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch red"></div>
+                <span class="color-name">Red</span>
+                <span class="color-count">(15)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch rosewood"></div>
+                <span class="color-name">Rosewood</span>
+                <span class="color-count">(1)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch true-cotal"></div>
+                <span class="color-name">True Cotal</span>
+                <span class="color-count">(1)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch white"></div>
+                <span class="color-name">White</span>
+                <span class="color-count">(34)</span>
+              </div>
+              <div class="color-item">
+                <div class="color-swatch yellow"></div>
+                <span class="color-name">Yellow</span>
+                <span class="color-count">(9)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brands Filter -->
+          <div class="filter-section">
+            <h3 class="filter-title">Brands</h3>
+            <div class="brand-search">
+              <input type="text" placeholder="search brands ..." class="brand-search-input">
+              <img src="img/icon-search.svg" alt="Search" class="brand-search-icon">
+            </div>
+            <div class="brand-list">
+              <div class="brand-item">
+                <input type="checkbox" id="brand-amazon">
+                <label for="brand-amazon">Amazon (8)</label>
+              </div>
+              <div class="brand-item">
+                <input type="checkbox" id="brand-apple">
+                <label for="brand-apple">Apple (11)</label>
+              </div>
+              <div class="brand-item">
+                <input type="checkbox" id="brand-ashley">
+                <label for="brand-ashley">Ashley (3)</label>
+              </div>
+              <div class="brand-item">
+                <input type="checkbox" id="brand-asus">
+                <label for="brand-asus">Asus (3)</label>
+              </div>
+              <div class="brand-item">
+                <input type="checkbox" id="brand-basett">
+                <label for="brand-basett">Basett (5)</label>
+              </div>
+              <div class="brand-item">
+                <input type="checkbox" id="brand-cerave">
+                <label for="brand-cerave">Cerave (2)</label>
+              </div>
+              <div class="brand-item">
+                <input type="checkbox" id="brand-clinique">
+                <label for="brand-clinique">Clinique (4)</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="filter-section">
+            <h3 class="filter-title">Price</h3>
+            <div class="price-filters">
+              <div class="price-item">
+                <input type="checkbox" id="price-1">
+                <label for="price-1">0 - $100</label>
+              </div>
+              <div class="price-item">
+                <input type="checkbox" id="price-2">
+                <label for="price-2">$100 - $200</label>
+              </div>
+              <div class="price-item">
+                <input type="checkbox" id="price-3">
+                <label for="price-3">$200 - $500</label>
+              </div>
+              <div class="price-item">
+                <input type="checkbox" id="price-4">
+                <label for="price-4">$500+</label>
+              </div>
+            </div>
+            <div class="price-range">
+              <input type="text" placeholder="Min" class="price-min">
+              <span class="price-separator">-</span>
+              <input type="text" placeholder="Max" class="price-max">
+              <button class="filter-btn">FILTER</button>
+            </div>
+          </div>
+
+          <!-- Size Filter -->
+          <div class="filter-section">
+            <h3 class="filter-title">Size</h3>
+            <div class="size-filters">
+              <div class="size-item">
+                <input type="checkbox" id="size-us8">
+                <label for="size-us8">US 8 (1)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-us9">
+                <label for="size-us9">US 9 (1)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-us10">
+                <label for="size-us10">US 10 (1)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-us11">
+                <label for="size-us11">US 11 (1)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-us12">
+                <label for="size-us12">US 12 (1)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-xs">
+                <label for="size-xs">XS (5)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-s">
+                <label for="size-s">S (7)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-m">
+                <label for="size-m">M (10)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-l">
+                <label for="size-l">L (10)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-xl">
+                <label for="size-xl">XL (9)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-xxl">
+                <label for="size-xxl">XXL (7)</label>
+              </div>
+              <div class="size-item">
+                <input type="checkbox" id="size-3xl">
+                <label for="size-3xl">3XL (4)</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Storage Capacity Filter -->
+          <div class="filter-section">
+            <h3 class="filter-title">Storage Capacity</h3>
+            <div class="storage-filters">
+              <div class="storage-item">
+                <input type="checkbox" id="storage-128">
+                <label for="storage-128">128 GB (1)</label>
+              </div>
+              <div class="storage-item">
+                <input type="checkbox" id="storage-64">
+                <label for="storage-64">64GB (1)</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer Rating Filter -->
+          <div class="filter-section">
+            <h3 class="filter-title">Customer Rating</h3>
+            <div class="rating-filters">
+              <div class="rating-item">
+                <input type="checkbox" id="rating-5">
+                <label for="rating-5">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-count">(82)</span>
+                </label>
+              </div>
+              <div class="rating-item">
+                <input type="checkbox" id="rating-4">
+                <label for="rating-4">
+                  <span class="stars">★★★★☆</span>
+                  <span class="rating-count">(40)</span>
+                </label>
+              </div>
+              <div class="rating-item">
+                <input type="checkbox" id="rating-3">
+                <label for="rating-3">
+                  <span class="stars">★★★☆☆</span>
+                  <span class="rating-count">(4)</span>
+                </label>
+              </div>
+              <div class="rating-item">
+                <input type="checkbox" id="rating-2">
+                <label for="rating-2">
+                  <span class="stars">★★☆☆☆</span>
+                  <span class="rating-count">(4)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- PRODUCT GRID -->
+        <section class="product-section">
+          <!-- Sort and Filter Bar -->
+          <div class="product-controls">
+            <div class="product-controls-left">
+              <div class="sale-filter">
+                <input type="checkbox" id="sale-only">
+                <label for="sale-only">Show only products on sale</label>
+              </div>
+            </div>
+            <div class="product-controls-right">
+              <div class="sort-control">
+                <span class="sort-label">Sort:</span>
+                <select class="sort-select">
+                  <option>Sort by latest</option>
+                  <option>Sort by popularity</option>
+                  <option>Sort by average rating</option>
+                  <option>Sort by price: low to high</option>
+                  <option>Sort by price: high to low</option>
+                </select>
+              </div>
+              <div class="view-controls">
+                <button class="view-btn active" data-view="grid">⊞</button>
+                <button class="view-btn" data-view="list">☰</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product Cards -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/fashion-9-300x300.jpg" alt="Nike Air Max Unisex SYSTM Men Sneaker Shoes">
+                <div class="product-badge hot">HOT</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Nike Air Max Unisex SYSTM Men Sneaker Shoes</h3>
+                <div class="product-price">$148</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/electronic-1-300x300.jpg" alt="Apple MacBook Air with Apple M1 Chip">
+                <div class="product-badge hot">HOT</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Apple MacBook Air with Apple M1 Chip, 13.3 inch, 8GB RAM, 128GB SSD</h3>
+                <div class="product-price">$572</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cosmetic-2-300x300.jpg" alt="KUORA Tinted Facial Sunscreen SPF 50+">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">KUORA Tinted Facial Sunscreen SPF 50+</h3>
+                <div class="product-price">$14</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/electronic-14-2-300x300.jpg" alt="Laptop Asus Vivobook I5 1355U">
+                <div class="product-badge sale">-35%</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</h3>
+                <div class="product-price">
+                  <span class="current-price">$999</span>
+                  <span class="original-price">$1,536</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/fashion-10-1-300x300.jpg" alt="100% UV Protected Sunglasses For Men">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">100% UV Protected Sunglasses For Men</h3>
+                <div class="product-price">$123</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/fashion-3-300x300.jpg" alt="LV Women Leather Accent Denim Mini Skirt">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">LV Women Leather Accent Denim Mini Skirt</h3>
+                <div class="product-price">$1,390</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/fashion-5-300x300.jpg" alt="A Different Christmas Knit Holiday Sweater">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">A Different Christmas Knit Holiday Sweater</h3>
+                <div class="product-price">$50 - $65</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/electronic-20-300x300.jpg" alt="MacBook Air with M3 chip">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">MacBook Air with M3 chip, 16GB Unified Memory, 1TB SSD...</h3>
+                <div class="product-price">$1,399</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/electronic-22-300x300.jpg" alt="Apple Watch Series 9 GPS">
+                <div class="product-badge sale">-6%</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Apple Watch Series 9 GPS 45mm, Aluminum Case with...</h3>
+                <div class="product-price">
+                  <span class="current-price">$890</span>
+                  <span class="original-price">$950</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/furniture-6-300x300.jpg" alt="Milo Brass And Black Metal Lamp">
+                <div class="product-badge hot">HOT</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Milo Brass And Black Metal Lamp Ø18cm x 30cm</h3>
+                <div class="product-price">$82</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/electronic-24-300x300.jpg" alt="Ipad Mini 6 A15 Bionic chip">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Ipad Mini 6 A15 Bionic chip, 8.3 inch, 6th Gen, Wi-Fi, 64GB</h3>
+                <div class="product-price">$450 - $650</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/fashion-16-300x300.jpg" alt="Winter New Jacket Loose Retro American Campus">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Winter New Jacket Loose Retro American Campus</h3>
+                <div class="product-price">$160</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cat-1.jpg" alt="Light Luxury Urban Leather Lounge Chair">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Light Luxury Urban Leather Lounge Chair Home Living...</h3>
+                <div class="product-price">$179</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cat-2.jpg" alt="Winter Hats with Top Ball Custom Design">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Winter Hats with Top Ball Custom Design</h3>
+                <div class="product-price">$17</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cat-4.jpg" alt="LV Red Taurillon Leather Capucines">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">LV Red Taurillon Leather Capucines</h3>
+                <div class="product-price">$184</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cat-5.jpg" alt="New York Yankees MLB League Essential T-shirt">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">New York Yankees MLB League Essential T-shirt</h3>
+                <div class="product-price">$59 – $63</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cat-6.jpg" alt="TOOLS 34 Low Profile Hydraulic Trolley">
+                <div class="product-badge sale">-8%</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">TOOLS 34 Low Profile Hydraulic Trolley</h3>
+                <div class="product-price">
+                  <span class="current-price">$767</span>
+                  <span class="original-price">$837</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cat-7.jpg" alt="Howard Chandelier Six Long Arms - Gunmetal">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Howard Chandelier Six Long Arms - Gunmetal</h3>
+                <div class="product-price">$745</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cat-8.jpg" alt="OPPO A79 Pro 5G">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">OPPO A79 Pro 5G - 6000 mAh Battery, 8GB Ram, 128GB, 4k...</h3>
+                <div class="product-price">$314</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/1.jpg" alt="14-inch Fasion Simplicity Quality Wall Clock">
+                <div class="product-badge sale">-33%</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">14-inch Fasion Simplicity Quality Wall Clock, Home...</h3>
+                <div class="product-price">
+                  <span class="current-price">$50</span>
+                  <span class="original-price">$75</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/2.jpg" alt="Barbie Baseball Hat Cap Berkshire Fashions New">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Barbie Baseball Hat Cap Berkshire Fashions New</h3>
+                <div class="product-price">$12</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cosmetic-6-300x300.jpg" alt="Waterproof Mascara Sweat-Proof Non-Smudgy">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Waterproof Mascara Sweat-Proof Non-Smudgy Easily...</h3>
+                <div class="product-price">$10</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/electronic-27-300x300.jpg" alt="Apple iPhone 11 Pro">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Apple iPhone 11 Pro, 256GB, Black - Fully Unlocked</h3>
+                <div class="product-price">$352</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/electronic-30-5-300x300.jpg" alt="Drawer Record Storage Cabinet Turntable Stand">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Drawer Record Storage Cabinet Turntable Stand</h3>
+                <div class="product-price">$108</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/electronic-30-6-300x300.jpg" alt="Gaming Chair, Ergonomic Computer Office Desk Chair">
+                <div class="product-badge sale">-35%</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Gaming Chair, Ergonomic Computer Office Desk Chair</h3>
+                <div class="product-price">
+                  <span class="current-price">$129</span>
+                  <span class="original-price">$199</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/fashion-1-300x300.jpg" alt="Mens Winter Jacket Collar Warm Cotton">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Mens Winter Jacket Collar Warm Cotton, Coat Male...</h3>
+                <div class="product-price">$115</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/fashion-6-300x300.jpg" alt="Black Velvet Bow Trim Long Sleeve Womens Dresses">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Black Velvet Bow Trim Long Sleeve Womens Dresses</h3>
+                <div class="product-price">$1,250</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="img/cosmetic-7-300x300.jpg" alt="Translucent Compact Face Powder">
+                <div class="product-badge sale">-37%</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Translucent Compact Face Powder - 03 Medium, 0.22 oz</h3>
+                <div class="product-price">
+                  <span class="current-price">$9</span>
+                  <span class="original-price">$14</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results and Load More -->
+          <div class="results-section">
+            <div class="results-count">Showing 28 of 210 results</div>
+            <button class="load-more-btn">+ VIEW MORE</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <span class="merto-logo-text">
+              M<span class="merto-logo-e">e</span>rto
+              <span class="merto-logo-bar"></span>
+            </span>
+          </div>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <span class="contact-icon"><i class="bi bi-geo-alt"></i></span>
+              <span class="contact-text">29 SE 2nd Ave, Miami Florida 33131, United States</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><i class="bi bi-envelope"></i></span>
+              <span class="contact-text">info@example.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><i class="bi bi-telephone"></i></span>
+              <span class="contact-text">(+92) 3942 7879</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">SHOPPING</h4>
+          <ul class="footer-links">
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop by Brand</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Track order</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">INFOMATION</h4>
+          <ul class="footer-links">
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">ACCOUNT</h4>
+          <ul class="footer-links">
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">My orders</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">Let's keep in touch</h4>
+          <div class="newsletter">
+            <input type="email" placeholder="enter your email address" class="newsletter-input">
+            <button class="newsletter-btn">→</button>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-middle-item">
+          <span class="footer-icon"><i class="bi bi-telephone"></i></span>
+          <span class="footer-text">Didn't find what you were looking for?</span>
+          <a href="#" class="footer-link">Contact Us</a>
+        </div>
+        <div class="footer-middle-item">
+          <span class="footer-icon"><i class="bi bi-emoji-smile"></i></span>
+          <span class="footer-text">How can we help you today?</span>
+          <a href="#" class="footer-link">Help Center</a>
+        </div>
+        <div class="footer-middle-item">
+          <span class="footer-icon"><i class="bi bi-bullseye"></i></span>
+          <span class="footer-text">We'd love to hear what you think!</span>
+          <a href="#" class="footer-link">Give Feedback</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          Copyright © Merto. All Rights Reserved
+        </div>
+        <div class="footer-payment">
+          <img src="img/payment-icons-1.png" alt="Payment Methods" class="payment-icons">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
