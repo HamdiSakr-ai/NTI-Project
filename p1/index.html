@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merto – Online Shop</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Header Top Bar -->
+  <div class="header-top py-1 small">
+    <div class="container-xl d-flex justify-content-between align-items-center">
+      <div>Free Shipping on All Orders Over $250</div>
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="bi bi-telephone me-1"></i>Contact us 24/7 <b>(+92) 3942 7879</b></span>
+        <div class="dropdown">
+          <a class="dropdown-toggle text-light" href="#" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/english.png" alt="English" width="18" class="me-1"> English
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+            <li><a class="dropdown-item" href="#"><img src="img/espanol.png" width="16" class="me-1"> Español</a></li>
+            <li><a class="dropdown-item" href="#"><img src="img/francais.png" width="16" class="me-1"> Français</a></li>
+            <li><a class="dropdown-item" href="#"><img src="img/portugues.png" width="16" class="me-1"> Português</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a class="dropdown-toggle text-light" href="#" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="currencyDropdown">
+            <li><a class="dropdown-item" href="#">EUR</a></li>
+            <li><a class="dropdown-item" href="#">BRL</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Main -->
+  <header class="bg-white border-bottom sticky-top">
+    <div class="container-xl d-flex align-items-center justify-content-between py-3">
+      <a href="#"><img src="img/logo.png" alt="Merto Logo" height="54"></a>
+      <form class="d-flex flex-grow-1 mx-4 search-bar">
+        <select class="form-select rounded-start-pill border-0 bg-light">
+          <option>All Categories</option>
+          <option>Autopart</option>
+          <option>Beauty & Health</option>
+          <option>Electronic</option>
+          <option>Fashion</option>
+        </select>
+        <input class="form-control border-0 bg-light rounded-0" type="search" placeholder="Search for products..." aria-label="Search">
+        <button class="btn btn-dark rounded-end-pill px-3 d-flex align-items-center justify-content-center" type="submit"><i class="bi bi-search fs-5"></i></button>
+      </form>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="text-dark fw-bold d-flex align-items-center"><i class="bi bi-person fs-4 me-1"></i>Account</a>
+        <a href="#" class="text-dark position-relative d-flex align-items-center"><i class="bi bi-heart fs-4"></i><span class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span></a>
+        <a href="#" class="text-dark position-relative d-flex align-items-center"><i class="bi bi-cart fs-4"></i><span class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span></a>
+      </div>
+    </div>
+  </header>
+  <!-- Navigation -->
+  <nav class="bg-white border-bottom nav-main">
+    <div class="container-xl d-flex align-items-center">
+      <button class="btn btn-link text-dark fw-bold d-flex align-items-center me-3" id="sidebarToggle">
+        <i class="bi bi-list fs-4 me-2"></i> SHOP BY CATEGORIES
+      </button>
+      <ul class="nav flex-nowrap gap-2">
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Homepages</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Categories</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Products</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Pages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-danger fw-bold" href="#"><i class="bi bi-ticket-perforated me-1"></i>Best Discount</a></li>
+        <li class="nav-item dropdown ms-auto"><a class="nav-link dropdown-toggle" href="#">Recently viewed</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero Banner -->
+  <section class="container-xl my-4">
+    <div class="row g-3">
+      <div class="col-lg-8">
+        <img src="img/banner1-demo1.jpg" class="img-fluid rounded w-100" alt="Main Banner">
+      </div>
+      <div class="col-lg-4 d-flex flex-column gap-3">
+        <img src="img/banner2-demo1.jpg" class="img-fluid rounded" alt="Banner 2">
+        <img src="img/banner3-demo1.jpg" class="img-fluid rounded" alt="Banner 3">
+      </div>
+    </div>
+  </section>
+  <!-- Category Icons -->
+  <section class="container-xl my-4">
+    <div class="row text-center g-3">
+      <div class="col-6 col-md-2">
+        <img src="img/icon-menu-1.png" class="mb-2" width="40" alt="Fashion">
+        <div>Fashion</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="img/icon-menu-2.png" class="mb-2" width="40" alt="Phone & Tablet">
+        <div>Phone & Tablet</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="img/icon-menu-3.png" class="mb-2" width="40" alt="Laptop & Computer">
+        <div>Laptop & Computer</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="img/icon-menu-4.png" class="mb-2" width="40" alt="TV, Audio – Video">
+        <div>TV, Audio – Video</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="img/icon-menu-5.png" class="mb-2" width="40" alt="Camera & Photo">
+        <div>Camera & Photo</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="img/icon-menu-6.png" class="mb-2" width="40" alt="Home & Decor">
+        <div>Home & Decor</div>
+      </div>
+    </div>
+  </section>
+  <!-- Promo Banner Row -->
+  <section class="container-xl my-4">
+    <div class="row g-3">
+      <div class="col-md-3">
+        <img src="img/banner-vertical-menu-1.jpg" class="img-fluid rounded w-100" alt="Promo 1">
+      </div>
+      <div class="col-md-3">
+        <img src="img/banner-vertical-menu-2.jpg" class="img-fluid rounded w-100" alt="Promo 2">
+      </div>
+      <div class="col-md-3">
+        <img src="img/banner-mega-menu-furniture.jpg" class="img-fluid rounded w-100" alt="Promo 3">
+      </div>
+      <div class="col-md-3">
+        <img src="img/cosmetic-mega-menu.jpg" class="img-fluid rounded w-100" alt="Promo 4">
+      </div>
+    </div>
+  </section>
+  <!-- Blog Section -->
+  <section class="container-xl my-5">
+    <h3 class="mb-4 fw-bold">From Our Blog</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/blog-1.jpg" class="card-img-top" alt="Blog 1">
+          <div class="card-body">
+            <h6 class="card-title fw-bold">Weekday Outfit Inspiration for All Occasions</h6>
+            <p class="card-text small text-muted">Beauty & Fashion By Myoui Mina</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-link p-0 text-danger">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/blog-2.jpg" class="card-img-top" alt="Blog 2">
+          <div class="card-body">
+            <h6 class="card-title fw-bold">100% Pure & Natural Sage Essential Oil</h6>
+            <p class="card-text small text-muted">Cosmetics By Myoui Mina</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-link p-0 text-danger">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/blog-3.jpg" class="card-img-top" alt="Blog 3">
+          <div class="card-body">
+            <h6 class="card-title fw-bold">Tips for Cleaning Desktop & Laptop</h6>
+            <p class="card-text small text-muted">Electronics By Myoui Mina</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-link p-0 text-danger">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Add after hero/slider section -->
+<section class="container-xl my-5">
+  <div class="row text-center g-4">
+    <div class="col-6 col-md-3 col-lg-2">
+      <img src="img/icon-menu-1.png" class="feature-icon" alt="Shipping">
+      <div class="fw-bold">Fast, Free Shipping</div>
+      <div class="small">On order over $50</div>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2">
+      <img src="img/icon-menu-4.png" class="feature-icon" alt="Delivery">
+      <div class="fw-bold">Next Day Delivery</div>
+      <div class="small">Free– spend over $99</div>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2">
+      <img src="img/icon-menu-5.png" class="feature-icon" alt="Guarantee">
+      <div class="fw-bold">Low Price Guarantee</div>
+      <div class="small">We offer competitive prices</div>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2">
+      <img src="img/icon-menu-6.png" class="feature-icon" alt="Quality">
+      <div class="fw-bold">Quality Guarantee</div>
+      <div class="small">We Guarantee Our Products</div>
+    </div>
+  </div>
+</section>
+
+<!-- Add after feature icons: category icons row (already present) -->
+
+<!-- Add after category icons: Flash Deals carousel (static version) -->
+<section class="container-xl my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="fw-bold mb-0">Flash Deals</h3>
+    <div class="text-end small">Ends in <span class="fw-bold">00 : 00 : 00</span> <a href="#" class="ms-3">See All Products</a></div>
+  </div>
+  <div class="row g-3">
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount">-35%</span>
+        <img src="img/electronic-1-300x300.jpg" alt="Laptop">
+        <div class="fw-bold">Laptop Asus Vivobook I5 1355U</div>
+        <div class="price">$999 <span class="old-price">$1,536</span></div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount">-6%</span>
+        <img src="img/electronic-9-300x300.jpg" alt="Watch">
+        <div class="fw-bold">Apple Watch Series 9 GPS</div>
+        <div class="price">$890 <span class="old-price">$950</span></div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount">-8%</span>
+        <img src="img/autopart-mega-menu.jpg" alt="Trolley">
+        <div class="fw-bold">TOOLS 34 Low Profile Hydraulic Trolley</div>
+        <div class="price">$767 <span class="old-price">$837</span></div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount">-33%</span>
+        <img src="img/banner-vertical-menu-2.jpg" alt="Clock">
+        <div class="fw-bold">14-inch Fasion Simplicity Wall Clock</div>
+        <div class="price">$50 <span class="old-price">$75</span></div>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount">-37%</span>
+        <img src="img/cosmetic-2-300x300.jpg" alt="Face Powder">
+        <div class="fw-bold">Translucent Compact Face Powder</div>
+        <div class="price">$9 <span class="old-price">$14</span></div>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add after flash deals: Promo banners row -->
+<section class="container-xl my-5">
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="promo-banner"><img src="img/automotive-11-300x300.jpg" alt="Michelin"></div>
+      <div class="fw-bold text-center mt-2">SALE 10% OFF TIRES MICHELIN</div>
+    </div>
+    <div class="col-md-4">
+      <div class="promo-banner"><img src="img/furniture-6-300x300.jpg" alt="Sofa"></div>
+      <div class="fw-bold text-center mt-2">Sofa Crafted in UK</div>
+    </div>
+    <div class="col-md-4">
+      <div class="promo-banner"><img src="img/cosmetic-6-300x300.jpg" alt="Beauty"></div>
+      <div class="fw-bold text-center mt-2">Steals under $25 Beauty</div>
+    </div>
+  </div>
+</section>
+
+<!-- Add after promo banners: New arrivals (static grid) -->
+<section class="container-xl my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="fw-bold mb-0">New arrivals</h3>
+    <div>
+      <a href="#" class="me-3">Fashion</a>
+      <a href="#" class="me-3">Phone & Tablet</a>
+      <a href="#" class="me-3">Home & Decor</a>
+      <a href="#" class="me-3">Beauty & Health</a>
+      <a href="#">See All Products</a>
+    </div>
+  </div>
+  <div class="row g-3">
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount" style="background:#ed0404;">HOT</span>
+        <img src="img/fashion-1-300x300.jpg" alt="Sneaker">
+        <div class="fw-bold">Nike Air Max Unisex SYSTM</div>
+        <div class="price">$148</div>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <img src="img/fashion-3-300x300.jpg" alt="Sunglasses">
+        <div class="fw-bold">100% UV Protected Sunglasses</div>
+        <div class="price">$123</div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <img src="img/fashion-9-300x300.jpg" alt="Skirt">
+        <div class="fw-bold">LV Women Leather Accent Skirt</div>
+        <div class="price">$1,390</div>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <img src="img/fashion-5-300x300.jpg" alt="Sweater">
+        <div class="fw-bold">Christmas Knit Holiday Sweater</div>
+        <div class="price">$50–$65</div>
+        <div class="stars">☆☆☆☆☆</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <img src="img/fashion-6-300x300.jpg" alt="Jacket">
+        <div class="fw-bold">Winter New Jacket Loose</div>
+        <div class="price">$160</div>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <img src="img/fashion-10-1-300x300.jpg" alt="Hat">
+        <div class="fw-bold">Winter Hats with Top Ball</div>
+        <div class="price">$17</div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add after new arrivals: Large product slider (static) -->
+<section class="container-xl my-5">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-6">
+      <img src="img/slide-hoodie-1.png" class="img-fluid" alt="Hoodie">
+    </div>
+    <div class="col-lg-6">
+      <div class="p-4 bg-white rounded shadow-sm">
+        <h4 class="fw-bold mb-3">Athletics Embroidered Relaxed Hoodie</h4>
+        <ul class="list-unstyled mb-3">
+          <li>✔ 64% cotton, 36% polyester</li>
+          <li>✔ Do not dry clean</li>
+          <li>✔ Machine wash</li>
+        </ul>
+        <div class="mb-3">
+          <span class="price">$89</span> <span class="old-price">$120</span>
+        </div>
+        <div class="mb-3">
+          <img src="img/slide-hoodie-1.png" width="40" class="rounded-circle me-2">
+          <img src="img/slide-hoodie-2.png" width="40" class="rounded-circle me-2">
+          <img src="img/slide-hoodie-4.png" width="40" class="rounded-circle me-2">
+        </div>
+        <button class="btn btn-dark w-100">BUY NOW</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add after hoodie slider: Best Selling carousel (static) -->
+<section class="container-xl my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="fw-bold mb-0">Best Selling</h3>
+    <a href="#">See All Products</a>
+  </div>
+  <div class="row g-3">
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount" style="background:#ed0404;">HOT</span>
+        <img src="img/fashion-1-300x300.jpg" alt="Sneaker">
+        <div class="fw-bold">Nike Air Max Unisex SYSTM</div>
+        <div class="price">$148</div>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <img src="img/fashion-9-300x300.jpg" alt="Skirt">
+        <div class="fw-bold">LV Women Leather Accent Skirt</div>
+        <div class="price">$1,390</div>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount">-17%</span>
+        <img src="img/electronic-30-5-300x300.jpg" alt="Wheels">
+        <div class="fw-bold">High-Performance Carbon Fiber Wheels</div>
+        <div class="price">$499 <span class="old-price">$599</span></div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <span class="discount">-8%</span>
+        <img src="img/autopart-mega-menu.jpg" alt="Trolley">
+        <div class="fw-bold">TOOLS 34 Low Profile Hydraulic Trolley</div>
+        <div class="price">$767 <span class="old-price">$837</span></div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card-product position-relative">
+        <img src="img/electronic-30-6-300x300.jpg" alt="MacBook">
+        <div class="fw-bold">Apple MacBook Air with Apple M1</div>
+        <div class="price">$572</div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container-xl my-5 text-center">
+  <h3 class="fw-bold mb-4">Looking for something else?</h3>
+  <form class="d-flex justify-content-center mb-3">
+    <input class="form-control w-50 rounded-0" type="search" placeholder="Search for products...">
+    <button class="btn btn-dark rounded-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.442 1.398a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg></button>
+  </form>
+  <div class="d-flex flex-wrap justify-content-center gap-2">
+    <span>smartphone</span>|
+    <span>tablet</span>|
+    <span>controller</span>|
+    <span>furniture</span>|
+    <span>laptop</span>|
+    <span>playstation</span>|
+    <span>womens fashion</span>|
+    <span>home & decor</span>|
+    <span>camera</span>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="footer-dark mt-5 pt-5 pb-2 bg-dark text-light">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <img src="img/logo (1).png" alt="Merto Logo" height="40" class="mb-2">
+          <div class="small">29 SE 2nd Ave, Miami Florida 33131, United States</div>
+          <div class="small">info@example.com</div>
+          <div class="small">(+92) 3942 7879</div>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6>SHOPPING</h6>
+          <ul class="list-unstyled small">
+            <li>Wishlist</li>
+            <li>Shop by Brand</li>
+            <li>Offers</li>
+            <li>Track order</li>
+            <li>Size Guide</li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6>INFORMATION</h6>
+          <ul class="list-unstyled small">
+            <li>Track Order</li>
+            <li>Shipping & Returns</li>
+            <li>About us</li>
+            <li>Help</li>
+            <li>Gift Cards</li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6>ACCOUNT</h6>
+          <ul class="list-unstyled small">
+            <li>Cart</li>
+            <li>My account</li>
+            <li>My orders</li>
+            <li>Wishlist</li>
+            <li>Affiliate Program</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6>Let’s keep in touch</h6>
+          <form class="d-flex">
+            <input type="email" class="form-control me-2" placeholder="Your email">
+            <button class="btn btn-danger" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center small mt-4">Copyright © Merto. All Rights Reserved</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

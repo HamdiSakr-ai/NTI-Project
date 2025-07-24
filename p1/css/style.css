@@ -1,0 +1,212 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header-top {
+  background: #f8f9fa;
+  color: #222;
+  font-size: 0.85rem;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #e94560;
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  transition: background 0.2s;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  background: #e94560;
+  color: #fff;
+}
+
+.badge.bg-danger {
+  font-size: 0.6rem;
+  min-width: 1em;
+  min-height: 1em;
+  padding: 0.2em 0.4em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #e94560 !important;
+  color: #fff !important;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .nav-link {
+  color: #222;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+}
+nav .nav-link.text-danger,
+nav .nav-link.active,
+nav .nav-link:focus,
+nav .nav-link:hover {
+  color: #e94560 !important;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 0.3rem;
+}
+
+.card-product {
+  border: 1px solid #eee;
+  border-radius: 0.8rem;
+  padding: 0.8rem 0.6rem 1rem 0.6rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  position: relative;
+  transition: box-shadow 0.2s;
+  font-size: 0.9rem;
+}
+.card-product:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+.card-product img {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 0.7rem;
+}
+.card-product .price {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #222;
+}
+.card-product .old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+}
+.card-product .discount {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  background: #e94560;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.15em 0.6em;
+  border-radius: 0.4em;
+  font-weight: 600;
+}
+.card-product .stars {
+  color: #f5b301;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.promo-banner img {
+  border-radius: 0.8rem;
+  width: 100%;
+  height: auto;
+}
+
+.footer-dark {
+  background: #181a1b;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+}
+.footer-dark .footer-logo {
+  height: 32px;
+  margin-bottom: 0.8rem;
+}
+.footer-dark h6 {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+.footer-dark ul li {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.footer-dark ul li:hover {
+  color: #e94560;
+}
+.footer-dark .footer-social svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.4rem;
+  color: #fff;
+  transition: color 0.2s;
+}
+.footer-dark .footer-social svg:hover {
+  color: #e94560;
+}
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 1.5rem;
+  padding-top: 0.8rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  nav .nav-link {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+  .card-product {
+    padding: 0.8rem 0.5rem 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header .container-xl, nav .container-xl {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.8rem !important;
+  }
+  .feature-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .card-product {
+    padding: 0.6rem 0.2rem 0.8rem 0.2rem;
+  }
+  section {
+    margin-bottom: 1rem;
+  }
+}
